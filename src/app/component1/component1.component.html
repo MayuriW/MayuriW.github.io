@@ -1,0 +1,20 @@
+<div class="container" style.border="{{border}}" [class.well]="isHide" > 
+  <div class="col-md-12" > 
+    <div  class="row"> 
+    <input type="button" value="{{buttonName}}" class="btn btn-danger" (click)="changeName()"/>
+
+       </div>
+  </div>
+  <div class="row"> 
+  <div class="col-md-12">
+    
+     <app-output (eventEmit)="myData($event)"></app-output>
+     {{dateis}}
+
+     <app-input [add]="dateis"></app-input>
+  </div>
+  </div>
+ 
+
+</div>
+
